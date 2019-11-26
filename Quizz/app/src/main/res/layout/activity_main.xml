@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#9874a7">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quizz"
+        android:textSize="35sp"
+        android:textColor="#0C0B0B"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="#ccccee"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:padding="20dp"
+        android:background="#f1b5c2">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:editable="false"
+       android:layout_gravity="center"
+        android:text="@string/Q1"
+        android:textColor="#0C0B0B"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="56dp" />
+    <RadioGroup
+        android:id="@+id/radio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:padding="10dp">
+        <RadioButton
+            android:id="@+id/op1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paris"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/op2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Montreal"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/op3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chandigarh"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+
+
+    </RadioGroup>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:padding="20dp"
+        android:background="#ffdbb7">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:editable="false"
+            android:layout_gravity="center"
+            android:text="@string/Q2"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="56dp" />
+        <RadioGroup
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <RadioButton
+                android:id="@+id/op2.1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Canada"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/op2.2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="India"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/op2.3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="America"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:padding="20dp"
+        android:background="#aabfc4">
+
+        <RadioGroup
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:editable="false"
+                android:text="@string/Q3"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="56dp" />
+
+            <RadioButton
+                android:id="@+id/op3.1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Canada"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/op3.2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="India"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/op3.3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="United States"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:padding="20dp"
+        android:background="#f0f8ff">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:editable="false"
+            android:layout_gravity="center"
+            android:text="@string/Q4"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="56dp" />
+        <RadioGroup
+            android:id="@+id/radio4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <RadioButton
+                android:id="@+id/op4.1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Canada"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/op4.2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Zealand"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/op4.3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nepal"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:padding="20dp"
+        android:background="#c0dcaf">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:editable="false"
+            android:layout_gravity="center"
+            android:text="@string/Q5"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="56dp" />
+        <RadioGroup
+            android:id="@+id/radio5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <RadioButton
+                android:id="@+id/op5.1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rajasthan"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/op5.2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delhi"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/op5.3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dubai"
+                android:textColor="#0C0B0B"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:textColor="#0C0B0B"
+        android:textSize="22sp"
+        >
+
+    </Button>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:padding="20dp"
+        android:background="#c2a1b0"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:editable="false"
+            android:gravity="left"
+            android:text=" RESULT:"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="56dp" />
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="center"
+
+            android:inputType="numberDecimal"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
