@@ -106,7 +106,7 @@
             android:orientation="vertical"
             android:padding="10dp">
             <RadioButton
-                android:id="@+id/op2.1"
+                android:id="@+id/op2_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Canada"
@@ -114,7 +114,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"/>
             <RadioButton
-                android:id="@+id/op2.2"
+                android:id="@+id/op2_2"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"/>
             <RadioButton
-                android:id="@+id/op2.3"
+                android:id="@+id/op2_3"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
                 tools:layout_editor_absoluteY="56dp" />
 
             <RadioButton
-                android:id="@+id/op3.1"
+                android:id="@+id/op3_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Canada"
@@ -174,7 +174,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"/>
             <RadioButton
-                android:id="@+id/op3.2"
+                android:id="@+id/op3_2"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -183,7 +183,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"/>
             <RadioButton
-                android:id="@+id/op3.3"
+                android:id="@+id/op3_3"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -223,7 +223,7 @@
             android:orientation="vertical"
             android:padding="10dp">
             <RadioButton
-                android:id="@+id/op4.1"
+                android:id="@+id/op4_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Canada"
@@ -231,7 +231,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"/>
             <RadioButton
-                android:id="@+id/op4.2"
+                android:id="@+id/op4_2"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -240,7 +240,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"/>
             <RadioButton
-                android:id="@+id/op4.3"
+                android:id="@+id/op4_3"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -280,7 +280,7 @@
             android:orientation="vertical"
             android:padding="10dp">
             <RadioButton
-                android:id="@+id/op5.1"
+                android:id="@+id/op5_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Rajasthan"
@@ -288,7 +288,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"/>
             <RadioButton
-                android:id="@+id/op5.2"
+                android:id="@+id/op5_2"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -297,7 +297,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"/>
             <RadioButton
-                android:id="@+id/op5.3"
+                android:id="@+id/op5_3"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
