@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EdgeEffect;
@@ -15,8 +16,10 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 EditText etresult;
 RadioGroup rg1,rg2,rg3,rg4,rg5;
 //RadioButton rbop1,rbop2,rbop3,rbop21,rbop22,rbop23,rbop31,rbop32,rbop33,rbop41,rbop42,rbop43,rbop51,rbop52,rbop53;
-Button btnSubmit;
+Button btnSubmit,btnrestart;
     int result = 0;
+
+    int val = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,7 @@ Button btnSubmit;
         rg5 = findViewById(R.id.radio5);
 
         btnSubmit = findViewById(R.id.submit);
+        btnrestart = findViewById(R.id.restart);
 //correct answers
 //        rbop1 = findViewById(R.id.op1);
 //        rbop22 = findViewById(R.id.op2_2);
@@ -49,41 +53,71 @@ Button btnSubmit;
         @Override
         public void onClick(View view) {
             etresult.setText(result+"");
+
         }
     });
+        btnrestart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                result = 0;
+                etresult.setText("");
+               rg1.clearCheck();
+               rg2.clearCheck();
+               rg3.clearCheck();
+               rg4.clearCheck();
+               rg5.clearCheck();
+
+               val = 5;
+            }
+        });
 }
+
+
 
     @Override
     public void onCheckedChanged(RadioGroup rg, int id) {
+
+
+        if(val!=0){
+            val = val - 1;
+            return;
+        }
+
+
         if(rg.getId() == R.id.radio1){
 
-            if (id== R.id.op1)
-                result+=10;
+            if (id== R.id.op1){
+                result+=10;}
         }
         else if(rg.getId() == R.id.radio2){
 
 
-            if (id == R.id.op2_2)
-                result += 10;
+            if (id == R.id.op2_2){
+                result += 10;}
         }
 
         else if (rg.getId() == R.id.radio3){
 
-            if (id == R.id.op3_3)
-                result += 10;
+            if (id == R.id.op3_3){
+                result += 10;}
         }
         else if (rg.getId() == R.id.radio4){
 
-            if (id == R.id.op4_1)
+            if(id == R.id.op4_1){
                 result += 10;
+            }
         }
         else if (rg.getId() == R.id.radio5) {
             {
-                if (id == R.id.op5_1)
+                if (id == R.id.op5_1){
                     result += 10;
+                }
             }
 
-        } }
+        }
+
+        Log.v("JASI",result+"-"+id);
+    }
 }
 
 
